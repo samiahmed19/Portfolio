@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+#header{
+    width: 100%;
+}
+.header-name a{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 10px;
+    font-size: 18px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    opacity: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-name{
+    margin-top: 12px;
+}
+.header-name a:hover{
+    text-decoration: underline 2px solid #ff004f;
+    transition: 0.9s;
+    /* position: absolute; */
+}
+
+
+.mid-text{
+    background-color: rgb(37, 37, 124);
+    width: 100%;
+    height: 50vh;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mid-text{
+    overflow: hidden;
+}
+#typing-effect{
+    white-space:  nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    font-size: 24px;
+    animation: typewriter;
+    animation-duration: 4s;
+    animation-timing-function: steps(40) ;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+@keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 25%;
+    }
+}
+
+.mid-text span{
+    color: #ff004f;
+}
+
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width: 100%;
+    background-color: #405f89;
+}
+.projects-heading{
+    height: 10vh;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+.projects-heading p{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    /* text-decoration: underline; */
+}
+#para{
+    color: #df30ef;
+    text-decoration: underline 2px;
+}
+
+.row1,.row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.row2{
+    margin-top: 100px;
+}
+
+.main-box{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+}
+.main-box img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    transition: .2s ease-in-out;
+}
+.main-box img:hover{
+    transform: scale(1.05);
+    border: 2px solid rgb(174, 35, 125);
+}
+.p-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.main-box span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(60, 27, 138);
+    color: white;
+    cursor: pointer;
+}
+.p-name{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    background-color: rgb(60, 27, 138);
+    color: white;
+    cursor: pointer;
+}
+.after-hover{
+    display: none;
+}
+.p-name:hover .after-hover{
+    display: inline;
+}
+.p-name .tag-color{
+    color: #ff004f;
+}
+.p-name:hover .before-hover{
+    display: none;
+}
+.show-button {
+    color: #fff !important;
+    font-size: 18px;
+    text-decoration: none;
+    background: #ed3330;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.show-button:hover {
+    background: #434343;
+    transition: all 0.4s ease 0s;
+    font-size: bold;
+    font-size: 20px;
+}
+
+
+.footer{
+    height: 50vh;
+    color: #fff;
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+#footer-text{
+    font-size: 30px;
+    position: sticky;
+    top: 10px;
+}
+.links{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 20px;
+    margin: 10px
+}
+
+.links a:hover{
+    text-decoration: underline;
+    transition: .25s;
+    color: #000;
+}
